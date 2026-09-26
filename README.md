@@ -43,31 +43,38 @@ These gestures can be performed using either the **left or right hand**.
 
 ## ▶️ How to Run
 
-Follow these steps to run the project:
+Follow these steps to run the project.
 
-### 1. Install the Required Libraries
+### 1. Clone or Download the Project
 
-Make sure Python is installed on your computer, then install the required dependencies:
+Download or clone this repository to your computer.
+
+Open a terminal inside the project folder.
+
+### 2. Install the Required Libraries
+
+Make sure Python is installed on your computer, then install all required dependencies from `requirements.txt`:
 
 ```bash
-pip install opencv-python mediapipe pyautogui
+pip install -r requirements.txt
 ```
 
-### 2. Place Your PowerPoint File
+### 3. Place Your PowerPoint File
 
 Put the PowerPoint presentation (`.pptx`) you want to control in the **same folder as `main.py`**.
 
-Example:
+For example:
 
 ```text
 Hand-Gesture-PowerPoint/
 │
 ├── main.py
+├── requirements.txt
 ├── presentation.pptx
 └── README.md
 ```
 
-### 3. Run `main.py`
+### 4. Run `main.py`
 
 Open a terminal in the project folder and run:
 
@@ -75,23 +82,23 @@ Open a terminal in the project folder and run:
 python main.py
 ```
 
-### 4. Open Your PowerPoint
+### 5. Open Your PowerPoint
 
 Open the PowerPoint presentation located in the **same folder as `main.py`**.
 
-Keep the PowerPoint window available so the gesture controls can interact with it.
+### 6. Control PowerPoint Using Gestures
 
-### 5. Control PowerPoint Using Gestures
+Make sure your webcam is available and show your hand in front of the camera.
 
-Use your webcam and show the supported hand gestures.
+The program will detect your hand gestures and automatically control PowerPoint.
 
-The program will detect your fingers and automatically perform the corresponding PowerPoint action:
-
-* ☝️ **1 Finger** → Next Slide
-* ✌️ **2 Fingers** → Previous Slide
-* 🤟 **3 Fingers** → Start Slideshow
-* 🖖 **4 Fingers** → Exit Slideshow
-* 🖐️ **5 Fingers** → Close PowerPoint
+| Gesture       | Action           |
+| ------------- | ---------------- |
+| ☝️ 1 Finger   | Next Slide       |
+| ✌️ 2 Fingers  | Previous Slide   |
+| 🤟 3 Fingers  | Start Slideshow  |
+| 🖖 4 Fingers  | Exit Slideshow   |
+| 🖐️ 5 Fingers | Close PowerPoint |
 
 ---
 
@@ -101,8 +108,10 @@ The program will detect your fingers and automatically perform the corresponding
 * Keep your hand clearly visible to the webcam.
 * Run `main.py` before using the gesture controls.
 * Keep the PowerPoint presentation in the **same folder as `main.py`**.
-* A short cooldown is used between gestures to prevent accidental repeated actions.
-* Make sure PowerPoint is the active application when using the controls.
+* Make sure PowerPoint is open when using the gesture controls.
+* A cooldown mechanism is used to prevent accidental repeated actions.
+* Gestures can be performed using either the **left or right hand**.
+* Make sure the required Python dependencies are installed before running the program.
 
 ---
 
@@ -112,6 +121,7 @@ The program will detect your fingers and automatically perform the corresponding
 Hand-Gesture-PowerPoint/
 │
 ├── main.py
+├── requirements.txt
 ├── presentation.pptx
 └── README.md
 ```
@@ -120,8 +130,35 @@ Hand-Gesture-PowerPoint/
 
 ## 🎯 Usage
 
-1. Run `main.py`
-2. Open the PowerPoint file from the same folder
-3. Show your hand in front of the webcam
-4. Use the gestures to control your presentation
-5. Enjoy a hands-free PowerPoint presentation! 🎥✋
+1. Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+2. Place your `.pptx` PowerPoint file in the same folder as `main.py`.
+
+3. Run the program:
+
+```bash
+python main.py
+```
+
+4. Open your PowerPoint presentation.
+
+5. Show your hand in front of the webcam.
+
+6. Use the gestures to control your presentation.
+
+Enjoy a **hands-free PowerPoint presentation!** 🎥✋
+
+---
+
+## 📌 Quick Start
+
+```bash
+pip install -r requirements.txt
+python main.py
+```
+
+Then open your PowerPoint file from the same folder and control it using hand gestures.
